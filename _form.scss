@@ -46,8 +46,8 @@
         align-items: flex-end;
         align-content: space-around;
         justify-content: space-between;
-        // justify-content:flex-start;
-        position: relative;
+        position: absolute;
+        right: 0;
     }
 
     &__fieldset {
@@ -336,7 +336,6 @@
 }
 
 .details[open] {
-    position: absolute;
     display: flex;
     justify-content: flex-end
 }

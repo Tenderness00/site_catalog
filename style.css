@@ -232,7 +232,8 @@
   align-items: flex-end;
   align-content: space-around;
   justify-content: space-between;
-  position: relative;
+  position: absolute;
+  right: 0;
 }
 .filtering-form__fieldset {
   display: flex;
@@ -501,7 +502,6 @@
 }
 
 .details[open] {
-  position: absolute;
   display: flex;
   justify-content: flex-end;
 }
@@ -645,7 +645,7 @@ a {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
-  text-decoration-line: underline;
+  text-decoration: none;
 }
 .catalog__info {
   display: flex;
@@ -723,7 +723,6 @@ a {
   grid-template-columns: repeat(12, 1fr);
   margin-top: 32px;
 }
-
 .for__item {
   height: 415px;
   grid-column: span 4;
@@ -739,27 +738,21 @@ a {
   justify-content: center;
   align-items: center;
 }
-
 .for__item_big {
   grid-column: span 6;
 }
-
 .for__item_1 {
   background-image: url(img/for_1.jpeg);
 }
-
 .for__item_2 {
   background-image: url(img/for_2.jpg);
 }
-
 .for__item_3 {
   background-image: url(img/for_3.jpg);
 }
-
 .for__item_4 {
   background-image: url(img/for_4.jpg);
 }
-
 .for__item_5 {
   background-image: url(img/for_5.jpg);
 }
@@ -842,6 +835,17 @@ a {
   line-height: 29px;
   color: #000000;
 }
+.menu__link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  text-decoration: none;
+  font-family: Montserrat;
+}
+.menu__link:hover {
+  text-decoration-line: underline;
+}
 
 .contacts {
   font-weight: 500;
@@ -884,18 +888,6 @@ a {
   flex-wrap: wrap;
 }
 
-.nav-down__link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #888888;
-  text-decoration: none;
-}
-
-.nav-down__link:hover {
-  text-decoration-line: underline;
-}
-
 .subscription {
   font-size: 12px;
   line-height: 16px;
@@ -926,4 +918,16 @@ a {
   font-family: Montserrat;
   font-weight: 400;
   font-size: 15px;
+}
+
+.button {
+  width: 275px;
+  height: 46px;
+  border: 1px 1px 1px 1px;
+  opacity: 0px;
+  border: 1px solid #ffffff;
+  border-radius: 16px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 14px;
 }/*# sourceMappingURL=style.css.map */
