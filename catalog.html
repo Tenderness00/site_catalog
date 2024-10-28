@@ -15,26 +15,26 @@
 <body>
     <header>
         <div class="top top__catalog center ">
-            <header class="header">
+            <div class="header">
                 <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
                 <input placeholder="Поиск" class="header__input" type="text">
                 <nav class="navigation">
                     <a class="navigation__link" href="catalog.html">Каталог</a>
                     <a class="navigation__link" href="basket.html">Корзина</a>
                 </nav>
-            </header>
+            </div>
             <h1 class="title__catalog">Каталог</h1>
         </div>
     </header>
     <main>
-        <section class="catalog__info center">
+        <div class="catalog__info center">
             <nav class="catalog__nav">
                 <a class="catalog__link" href="index.html">Главная</a>
                 <p>/</p>
                 <a class="catalog__link" href="catalog.html">Каталог</a>
             </nav>
             <div class="form__buttons center">
-                <form class="container">
+                <div class="container">
                     <div class="filter-button-wrapper">
                         <details class="details">
                             <summary class="filter-button">Фильтрация</summary>
@@ -73,13 +73,13 @@
                                             <fieldset class="filtering-form__fieldset">
                                                 <legend class="filtering-form__legend">Цена</legend>
                                                 <div class="range">
-                                                    <label class="range__label" for="price-range">От 0 руб. до 100000
+                                                    <label class="range__label">От 0 руб. до 100000
                                                         руб.</label>
                                                     <div class="range__slider">
-                                                        <input class="range__input radio__input-min" type="range" min="1"
-                                                            max="100000" value="1" />
-                                                        <input class="range__input radio__input-max" type="range" min="1"
-                                                            max="100000" value="100000" />
+                                                        <input class="range__input radio__input-min" type="range"
+                                                            min="1" max="100000" value="1">
+                                                        <input class="range__input radio__input-max" type="range"
+                                                            min="1" max="100000" value="100000">
                                                     </div>
                                                 </div>
                                             </fieldset>
@@ -146,7 +146,8 @@
                                                             for="color-darkpurple"></label>
                                                     </div>
                                                     <div class="checkbox checkbox__color-options">
-                                                        <input class="checkbox__input" type="checkbox" id="color-purple">
+                                                        <input class="checkbox__input" type="checkbox"
+                                                            id="color-purple">
                                                         <label class="checkbox__label checkbox__label-purple"
                                                             for="color-purple"></label>
                                                     </div>
@@ -167,55 +168,55 @@
                                                 <legend class="filtering-form__legend">Тип комнаты</legend>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="kitchen-dining"
-                                                        name="room-type" value="kitchen-dining" checked />
+                                                        name="room-type" value="kitchen-dining" checked>
                                                     <label class="checkbox__label" for="kitchen-dining">Кухня и
                                                         столовая</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="bathroom"
-                                                        name="room-type" value="bathroom" checked />
+                                                        name="room-type" value="bathroom" checked>
                                                     <label class="checkbox__label" for="bathroom">Ванная комната</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="kids-room"
-                                                        name="room-type" value="kids-room" />
+                                                        name="room-type" value="kids-room">
                                                     <label class="checkbox__label" for="kids-room">Детская
                                                         комната</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="home-office"
-                                                        name="room-type" value="home-office" />
+                                                        name="room-type" value="home-office">
                                                     <label class="checkbox__label" for="home-office">Домашний
                                                         офис</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="living-room"
-                                                        name="room-type" value="living-room" />
+                                                        name="room-type" value="living-room">
                                                     <label class="checkbox__label" for="living-room">Гостинная</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="hallway"
-                                                        name="room-type" value="hallway" />
+                                                        name="room-type" value="hallway">
                                                     <label class="checkbox__label" for="hallway">Прихожая</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="bedroom"
-                                                        name="room-type" value="bedroom" />
+                                                        name="room-type" value="bedroom">
                                                     <label class="checkbox__label" for="bedroom">Спальня</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="wardrobe"
-                                                        name="room-type" value="wardrobe" />
+                                                        name="room-type" value="wardrobe">
                                                     <label class="checkbox__label" for="wardrobe">Гардероб</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="country-house"
-                                                        name="room-type" value="country-house" />
+                                                        name="room-type" value="country-house">
                                                     <label class="checkbox__label" for="country-house">Дача</label>
                                                 </div>
                                                 <div class="checkbox">
                                                     <input class="checkbox__input" type="checkbox" id="light"
-                                                        name="room-type" value="light" />
+                                                        name="room-type" value="light">
                                                     <label class="checkbox__label" for="light">Свет</label>
                                                 </div>
                                             </fieldset>
@@ -226,9 +227,9 @@
                                     </div>
                                 </div>
                             </form>
+                        </details>
                     </div>
-                    </details>
-                </form>
+                </div>
                 <form class="container">
                     <select class="select" name="select">
                         <option class="select" value="newest">Сперва новые</option>
@@ -236,10 +237,10 @@
                     </select>
                 </form>
             </div>
-        </section>
+        </div>
         <section class="product-box center">
             <div class="product-content">
-                <article class="product">
+                <div class="product">
                     <img src="img/productTATRAN.jpeg" alt="product__img">
                     <h3 class="product__name">Кровать TATRAN</h3>
                     <p class="product__overview">Основание из полированной нержавеющей стали, придает оригинальный
@@ -247,8 +248,8 @@
                     <div class="product__box-price">
                         <span class="product__price">120 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productVIOLA.jpeg" alt="product__img">
                     <h3 class="product__name">Кресло VILORA</h3>
                     <p class="product__overview"> Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
@@ -256,8 +257,8 @@
                     <div class="product__box-price">
                         <span class="product__price">21 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productMENU.jpeg" alt="product__img">
                     <h3 class="product__name">Стол MENU</h3>
                     <p class="product__overview"> Для того чтобы трапезничать было приятно, необходим правильный
@@ -265,8 +266,8 @@
                     <div class="product__box-price">
                         <span class="product__price">34 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productASKEST.jpeg" alt="product__img">
                     <h3 class="product__name">Кресло ASKESTA</h3>
                     <p class="product__overview">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен
@@ -274,8 +275,8 @@
                     <div class="product__box-price">
                         <span class="product__price">78 000 руб.</span>
                     </div>
-                </article>
-                <artical class="product">
+                </div>
+                <div class="product">
                     <img src="img/productNORMAN.jpeg" alt="product__img">
                     <h3 class="product__name">Стол NORMAN</h3>
                     <p class="product__overview">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки
@@ -283,8 +284,8 @@
                     <div class="product__box-price">
                         <span class="product__price">40 000 руб.</span>
                     </div>
-                </artical>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productNASTAN.jpeg" alt="product__img">
                     <h3 class="product__name">Диван NASTAN</h3>
                     <p class="product__overview">Модель отличается простотой линий и форм, отсутствием броского декора.
@@ -292,8 +293,8 @@
                     <div class="product__box-price">
                         <span class="product__price">80 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productTATRAN.jpeg" alt="product__img">
                     <h3 class="product__name">Кровать TATRAN</h3>
                     <p class="product__overview">Основание из полированной нержавеющей стали, придает оригинальный
@@ -301,8 +302,8 @@
                     <div class="product__box-price">
                         <span class="product__price">120 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productVIOLA.jpeg" alt="product__img">
                     <h3 class="product__name">Кресло VILORA</h3>
                     <p class="product__overview"> Мягкое и уютное, аккуратное и стильное. Упругие подушки сиденья и
@@ -310,8 +311,8 @@
                     <div class="product__box-price">
                         <span class="product__price">21 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productMENU.jpeg" alt="product__img">
                     <h3 class="product__name">Стол MENU</h3>
                     <p class="product__overview"> Для того чтобы трапезничать было приятно, необходим правильный
@@ -319,8 +320,8 @@
                     <div class="product__box-price">
                         <span class="product__price">34 000 руб.</span>
                     </div>
-                </article>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productASKEST.jpeg" alt="product__img">
                     <h3 class="product__name">Кресло ASKESTA</h3>
                     <p class="product__overview">Высокоэластичный пенополиуретан в «начинке» кресла надежен и долговечен
@@ -328,8 +329,8 @@
                     <div class="product__box-price">
                         <span class="product__price">78 000 руб.</span>
                     </div>
-                </article>
-                <artical class="product">
+                </div>
+                <div class="product">
                     <img src="img/productNORMAN.jpeg" alt="product__img">
                     <h3 class="product__name">Стол NORMAN</h3>
                     <p class="product__overview">Прекрасно переносит солнечные лучи, перепады влажности и любые осадки
@@ -337,8 +338,8 @@
                     <div class="product__box-price">
                         <span class="product__price">40 000 руб.</span>
                     </div>
-                </artical>
-                <article class="product">
+                </div>
+                <div class="product">
                     <img src="img/productNASTAN.jpeg" alt="product__img">
                     <h3 class="product__name">Диван NASTAN</h3>
                     <p class="product__overview">Модель отличается простотой линий и форм, отсутствием броского декора.
@@ -346,12 +347,12 @@
                     <div class="product__box-price">
                         <span class="product__price">80 000 руб.</span>
                     </div>
-                </article>
+                </div>
             </div>
         </section>
-        <section class="catalog center">
+        <div class="catalog center">
             <a class="catalog__link" href="catalog.html">Перейти в каталог</a>
-        </section>
+        </div>
 
     </main>
 
