@@ -1,11 +1,9 @@
-@import 'vars';
-@import 'cart';
-@import 'form';
-
 * {
   margin: 0;
   padding: 0;
 }
+
+@import 'vars';
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -88,6 +86,11 @@ a {
     letter-spacing: 0%;
     text-align: left;
   }
+
+  &__mobil {
+    display: none;
+  }
+
 }
 
 .catalog {
@@ -445,3 +448,7 @@ a {
   }
 
 }
+
+@import 'cart';
+@import 'form';
+@import 'mobile';
