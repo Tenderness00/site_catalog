@@ -32,7 +32,7 @@
   &__item {
     border-top: 0.5px solid #CACDD8;
     padding-top: 25px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -74,7 +74,6 @@
     line-height: 29.4px;
     text-align: center;    
     color: #000000;
-
   }
 }
 
@@ -151,6 +150,8 @@
 .design {
   border: rgb(247, 246, 246);
   background: transparent;
+  width: 288px;
+  outline: 0;
 } 
   .design::placeholder {
   font-family: Montserrat;
