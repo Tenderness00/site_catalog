@@ -1,7 +1,7 @@
 .filter-button {
-    // background-image: url(IMAGE/miniature.jpeg);
+    background-image: url(img/arrow.svg);
     background-repeat: no-repeat;
-    background-position: 140px;
+    background-position: right 20px center;
     appearance: none;
     box-sizing: border-box;
     border: 1px solid rgb(196, 196, 196);
@@ -11,7 +11,7 @@
     font-size: 16px;
     font-weight: 500;
     padding-top: 9px;
-    text-align: center;
+    text-align: start;
 }
 
 .filtering-form {
@@ -357,9 +357,9 @@
 
 
 .select {
-    background-image: url(IMAGE/miniature.jpeg);
+    background-image: url(img/arrow.svg);
     background-repeat: no-repeat;
-    background-position: 180px;
+    background-position: right 20px center;
     appearance: none;
     box-sizing: border-box;
     border-radius: 20px;
@@ -370,7 +370,7 @@
     border: 1px 1px 1px 1px;
     border-color: #C4C4C4;
     color: rgb(0, 0, 0);
-    font-family: Montserrat;
+    font-family: inherit;
     padding-left: 23px;
 }
 

@@ -90,7 +90,6 @@ a {
   line-height: 24px;
   color: #ffffff;
   font-weight: 400;
-  letter-spacing: 0%;
   text-align: left;
   text-decoration-line: underline;
   margin-bottom: 64px;
@@ -622,8 +621,9 @@ a {
 }
 
 .filter-button {
+  background-image: url(img/arrow.svg);
   background-repeat: no-repeat;
-  background-position: 140px;
+  background-position: right 20px center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -635,7 +635,7 @@ a {
   font-size: 16px;
   font-weight: 500;
   padding-top: 9px;
-  text-align: center;
+  text-align: start;
 }
 
 .filtering-form {
@@ -958,9 +958,9 @@ a {
 }
 
 .select {
-  background-image: url(IMAGE/miniature.jpeg);
+  background-image: url(img/arrow.svg);
   background-repeat: no-repeat;
-  background-position: 180px;
+  background-position: right 20px center;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -973,12 +973,16 @@ a {
   border: 1px 1px 1px 1px;
   border-color: #C4C4C4;
   color: rgb(0, 0, 0);
-  font-family: Montserrat;
+  font-family: inherit;
   padding-left: 23px;
 }
 
 
 @media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
   .center {
     padding-left: 16px;
     padding-right: 16px;
@@ -998,6 +1002,14 @@ a {
   .top__catalog {
     height: 368px;
   }
+  .top__basket {
+    background-position: center;
+    padding-top: 32px;
+    height: 400px;
+  }
+  .navigation {
+    display: none;
+  }
   .navigation__mobil {
     display: flex;
     align-items: center;
@@ -1011,14 +1023,14 @@ a {
     flex-direction: column;
   }
   .logo__img {
-    margin-right: 99px;
+    width: 99px;
   }
   .title {
     font-size: 48px;
     font-weight: 600;
     line-height: 58.51px;
     text-align: center;
-    width: 400px;
+    width: auto;
     height: 177px;
     top: 118px;
     left: 16px;
@@ -1031,6 +1043,13 @@ a {
     text-align: center;
     margin-top: 82px;
   }
+  .title__basket {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 58.51px;
+    text-align: center;
+  }
   .tagline {
     font-size: 16px;
     font-weight: 400;
@@ -1038,19 +1057,18 @@ a {
     text-align: center;
   }
   .catalog {
-    font-family: Montserrat;
     font-size: 14px;
     font-weight: 400;
-    line-height: 24px;
-    color: #FFFFFF;
+    height: auto;
+    display: flex;
+    justify-content: center;
   }
   .catalog__main {
-    font-family: Montserrat;
     font-size: 16px;
     font-weight: 400;
-    line-height: 24px;
-    text-align: left;
     color: #000;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   .catalog__info {
     height: auto;
@@ -1063,17 +1081,10 @@ a {
   }
   .heading {
     font-size: 24px;
-    line-height: 29.26px;
-    text-align: left;
-  }
-  .heading {
-    font-family: Montserrat;
-    font-size: 24px;
     font-weight: 600;
     line-height: 29.26px;
     text-align: left;
-    width: 342.91px;
-    height: 58px;
+    width: auto;
   }
   .for {
     grid-template-columns: repeat(4, 1 fr);
@@ -1081,16 +1092,35 @@ a {
   }
   .for__item {
     grid-column: 1/-1;
-    height: 375px;
+    width: auto;
     font-size: 28px;
-    line-height: 34px;
-    width: 342.93px;
+    font-weight: 600;
+    line-height: 34.13px;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
   }
   .for_big {
     height: 244px;
+    width: auto;
   }
   .product {
     width: auto;
+  }
+  .product__name {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+  }
+  .product__price {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.94px;
+  }
+  .product__overview {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
   }
   .product-content {
     flex-direction: column;
@@ -1122,5 +1152,36 @@ a {
   }
   .img__basket {
     display: none;
+  }
+  .filtering-form__frame {
+    width: auto;
+    right: auto;
+  }
+  .filtering-form__content-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    height: auto;
+    min-width: 190.5px;
+  }
+  .button-apply {
+    display: flex;
+    flex-direction: column;
+  }
+  .button__box {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: center;
+  }
+  .button__box__box-catalog {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 14.63px;
+    text-align: center;
+    width: 163px;
+    height: 37px;
+    padding: 11px 0px 11px 6px;
+    gap: 10px;
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -16,14 +16,19 @@
 </head>
 
 <body>
-    <div class="top__basket center">
+    <div class="top top__basket center">
         <header class="header">
-            <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип"></a>
+            <a class="logo" href="index.html"><img class="logo__img" src="img/logo.svg" alt="Логотип"></a>
             <input placeholder="Поиск" class="header__input" type="text">
             <nav class="navigation">
                 <a class="navigation__link" href="catalog.html">Каталог</a>
                 <a class="navigation__link" href="basket.html">Корзина</a>
             </nav>
+            <div class="navigation__mobil">
+                <a href="#"><img src="img/mini3.svg" alt="mini3"></a>
+                <a href="catalog.html"><img src="img/mini2.svg" alt="mimi2"></a>
+                <a href="basket.html"><img src="img/mini.svg" alt="mini.svg"></a>
+            </div>
         </header>
         <h1 class="title__basket">Корзина </h1>
     </div>
@@ -65,6 +70,12 @@
                 </div>
                 <input class="number__basket" type="number" value="1" min="1">
             </div>
+            <div class="forms center">
+                <button class="button__box">Очистить корзину</button>
+                <form action="catalog.html">
+                    <button class="button__box-catalog">Перейти в каталог</button>
+                </form>
+            </div>
         </div>
         <div class="cart__form">
             <h3 class="order">Оформление заказа</h3>
@@ -83,12 +94,7 @@
             <button class="order__text-basket">Оформить заказ</button>
         </div>
     </div>
-    <div class="forms center">
-        <button class="button__box">Очистить корзину</button>
-        <form action="catalog.html">
-            <button class="button__box-catalog">Перейти в каталог</button>
-        </form>
-    </div>
+
     <main>
         <section class="product-box center">
             <h2 class="heading">Специальные предложения</h2>
@@ -124,7 +130,7 @@
                 </article>
             </div>
         </section>
-        <div class="catalog center">
+        <div class="catalog__main center">
             <a class="catalog__link" href="catalog.html">Перейти в каталог</a>
         </div>
     </main>
@@ -138,7 +144,7 @@
                     <h4 class="menu">Меню </h4>
                     <a class="menu__link " href="index.html">Главная</a>
                     <a class="menu__link" href="catalog.html">Каталог</a>
-                    <a class="menu__link" href="cart.html">Корзина</a>
+                    <a class="menu__link" href="basket.html">Корзина</a>
                 </nav>
                 <div class="footer__item">
                     <h4 class="contacts">Контакты</h4>
