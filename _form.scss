@@ -144,7 +144,6 @@
 .radio__input:checked+.radio__label::before {
     border-color: #000000;
     background-image: url(img/vector.svg);
-
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -254,8 +253,8 @@
     border-color: #000;
     background-repeat: no-repeat;
     background-position: center;
-
 }
+
 
 .checkbox::before {
     background-color: #fff;
@@ -265,6 +264,7 @@
 .checkbox__label-black::before {
     background-color: #000;
     border-color: #000;
+    border-image: url(img/vector2.png);
 }
 
 .checkbox__label-gray::before {
@@ -331,8 +331,8 @@
 .checkbox__input:checked+.checkbox__label-blue::before,
 .checkbox__input:checked+.checkbox__label-purple::before {
     background-image: url(img/vector.svg);
-
 }
+
 
 .details[open] {
     display: flex;

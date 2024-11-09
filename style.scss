@@ -27,10 +27,15 @@ a {
   background-repeat: no-repeat;
   background-size: cover;
 
+
   &__catalog {
     background-image: url(img/topcatalog.jpeg);
     height: 400px;
   }
+}
+
+main {
+  padding: 16px;
 }
 
 .header {
