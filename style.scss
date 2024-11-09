@@ -113,7 +113,7 @@ a {
     letter-spacing: 0%;
     text-align: left;
     text-decoration: none;
-  }
+    }
 
   &__info {
     display: flex;
@@ -129,6 +129,11 @@ a {
   &__nav {
     display: flex;
     gap: 10px;
+  }
+
+  &__main {
+    margin-bottom: 64px;
+    padding-top: 31px;
   }
 }
 
@@ -448,14 +453,6 @@ a {
     font-family: Montserrat;
   }
 
-}
-
-.ingredient {
-  font-family: Montserrat;
-font-size: 24px;
-font-weight: 400;
-line-height: 29.26px;
-text-align: center;
 }
 
 @import 'cart';
