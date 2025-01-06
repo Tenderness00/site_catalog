@@ -34,10 +34,6 @@ a {
   }
 }
 
-main {
-  padding: 16px;
-}
-
 .header {
   height: 77px;
   display: flex;
@@ -268,7 +264,7 @@ main {
 }
 
 .product__img {
-  width: 100%;
+  width: auto;
 }
 
 .product__name {
